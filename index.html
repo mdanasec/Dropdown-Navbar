@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        body{
+            min-width: 100vh;
+            /* background:url(./book_bg.avif) no-repeat; */
+            background-size: cover;
+            background-position: center;
+            
+        }
+        
+        header{
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: white;
+            box-shadow: 0 5px 10px rgba(31, 30, 30, 0.1);
+            padding: 0px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+        header .logo{
+            font-weight: bolder;
+            font-size: 25px;
+            color: rgb(75, 72, 72);
+            
+        }
+        header .navbar ul{
+            list-style: none;
+            
+        }
+        header .navbar ul li{ 
+            position: relative;
+            float: left;
+            
+        }
+
+        header .navbar ul li a{
+            font-size: 20px;
+            padding: 20px;
+            color: #322e2e;
+            display: block;    
+       }
+
+       header .navbar ul li a:hover{
+        background: #322e2e;
+        color: white;
+
+       }
+       header .navbar ul li ul{
+           position: absolute;
+           left: 0;
+           width: 200px;
+           background: white;
+           display: none;
+
+       }
+       header .navbar ul li ul li{
+        width: 100%;
+        border-top:1px solid rgba(0,0,0.1,) ;
+        
+       }
+       header .navbar ul li ul li ul{
+        left:200px ;
+        top: 0;
+       }
+       header .navbar ul li:focus-within > ul,
+       header.navbar ul li:hover>ul{
+        display: initial;
+       }
+       .imgs{
+        height: 99.7vh;
+        width: 100%;
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">pages +</a>
+                    <ul>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">services +</a>
+                    <ul>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                    </ul>
+                </li>
+             </ul>
+        </li>
+                <li><a href="#">review</a></li>
+                <li><a href="#">gallery +</a>
+                <ul>
+                    <li><a href="#">grid gallery</a></li>
+                    <li><a href="#">fixed gallery</a></li>
+                </ul>
+                </li>
+                <li><a href="#">contact</a></li>
+              
+
+            </ul>
+        </nav>
+    </header>
+        <div>
+            <img src="book_bg.avif" alt="img" class="imgs">
+        </div>
+</body>
+</html>
